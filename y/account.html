@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            width: 700px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            background-color: rgb(203, 200, 200);
+            width: 680px;
+
+        }
+
+        #step-1 {
+            background-color: rgb(72, 174, 243);
+
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        input[type="date"] {
+            width: 350px;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            margin-left: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <form>
+        <h2><span id="step-1">Step 1: Account |</span> Step 2: Personal Details | Step 3: Your Review</h2><br><br>
+        <fieldset>
+            <legend>
+                Account
+            </legend>
+
+            <label>Email Address</label> 
+            <input type="email" name="email" />
+            <label>Password</label>
+            <input type="password" name="pass" required />
+            <label>Confirm Password</label>
+            <input type="password" name="confirmPass" required /><br>
+            <a href="index.html"><img src="back.png" style="width:120px;height:50px;"></a>
+            <a href="PersonalDetails.html"><img src="next.png" style="width:120px;height:50px;"></a>
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>

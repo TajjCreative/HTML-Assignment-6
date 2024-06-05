@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Review</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            width: 700px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            background-color: rgb(203, 200, 200);
+            width: 648px;
+
+        }
+
+        #step-1 {
+            background-color: rgba(17, 229, 56, 0.726);
+
+        }
+
+        #step-2 {
+            background-color: rgba(17, 229, 56, 0.726);
+
+        }
+
+        #step-3 {
+            background-color: rgb(72, 174, 243);
+
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        input[type="date"] {
+            width: 350px;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            margin-left: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <form>
+        <h2><span id="step-1">Step 1: Account |</span> <span id="step-2">Step 2: Personal Details |</span> <span
+                id="step-3">Step 3: Your Review</span></h2><br><br>
+        <fieldset>
+            <legend>
+                Your Review
+            </legend>
+            <span style="font-size: 20px;">How did you hear about us?</span>
+            <select name="review" id="">
+                <option value="">Select Your Review</option>
+                <option value="facebook">Facebook</option>
+                <option value="whatsapp">Whatsapp</option>
+                <option value="google">Google</option>
+                <option value="friends">Friends</option>
+                <option value="website">Website</option>
+            </select><br><br>
+            <span style="font-size: 20px;">Would you visit again?</span>
+            <input type="radio" name="Yes">Yes
+            <input type="radio" name="No">No
+            <input type="radio" name="Maybe">May be<br>
+            <label>Comments</label>
+            <textarea name="comments" id="" rows="3"></textarea><br>
+            <label>Documents</label><br>
+            <input type="file" name="fsleupload" required><br><br>
+            <input type="checkbox" name="emailupdate" value="">Sign me for email updates<br><br>
+            <a href="PersonalDetails.html"><img src="back.png" style="width:120px;height:50px;"></a>
+            <a href="submit.html"><img src="next.png" style="width:120px;height:50px;"></a>
+
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>
